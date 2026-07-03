@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDR Insight Toolkit | Inteligência & Prospecção</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col md:flex-row min-h-screen">
+
+    <aside class="w-full md:w-64 bg-slate-950 text-white flex flex-col shrink-0 shadow-2xl">
+        <div class="p-6 border-b border-slate-800">
+            <h1 class="text-md font-bold tracking-wider text-cyan-400 font-mono">SDR INSIGHT HUB</h1>
+            <p class="text-[11px] text-slate-400 mt-1">Estratégia & Prospecção 2026</p>
+        </div>
+        <nav class="flex-1 p-4 space-y-1 overflow-y-auto">
+            <button onclick="switchTab('filosofia')" id="btn-filosofia" class="tab-btn w-full flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition bg-cyan-600 text-white">
+                🧠 Filosofia do Pré-Call
+            </button>
+            <button onclick="switchTab('checklist')" id="btn-checklist" class="tab-btn w-full flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition text-slate-400 hover:bg-slate-900 hover:text-white">
+                📋 Checklist (11 Passos)
+            </button>
+            <button onclick="switchTab('validacao')" id="btn-validacao" class="tab-btn w-full flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition text-slate-400 hover:bg-slate-900 hover:text-white">
+                🔍 Pesquisa & Validação
+            </button>
+            <button onclick="switchTab('linkedin')" id="btn-linkedin" class="tab-btn w-full flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition text-slate-400 hover:bg-slate-900 hover:text-white">
+                🧬 LinkedIn & Abordagem
+            </button>
+            <button onclick="switchTab('crescibots')" id="btn-crescibots" class="tab-btn w-full flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition text-slate-400 hover:bg-slate-900 hover:text-white">
+                🤖 Ecossistema Crescibots
+            </button>
+        </nav>
+        <div class="p-4 border-t border-slate-900 text-center text-[10px] text-slate-600">
+            © Fernanda Fátima
+        </div>
+    </aside>
+
+    <main class="flex-1 p-6 md:p-10 max-w-7xl w-full mx-auto overflow-y-auto">
+
+        <section id="tab-filosofia" class="tab-content space-y-6">
+            <div class="border-b border-slate-200 pb-4">
+                <h2 class="text-3xl font-bold text-slate-900">A Mentalidade de Preparação</h2>
+                <p class="text-slate-500 mt-1">O sucesso da abordagem acontece antes mesmo do envio da primeira mensagem.</p>
+            </div>
+
+            <div class="bg-gradient-to-r from-slate-900 to-slate-800 text-white p-6 rounded-2xl shadow-lg border border-slate-700">
+                <h3 class="text-xl font-bold text-cyan-400 mb-2">O Objetivo Central do Pré-Call</h3>
+                <p class="text-slate-300 text-sm leading-relaxed max-w-3xl">
+                    "Chegar na conversa sabendo mais sobre a escola do que a própria escola espera que eu saiba. A mensagem é importante, claro. Mas ela só funciona porque existe um trabalho cirúrgico de preparação por trás."
+                </p>
+                <div class="mt-4 flex flex-wrap gap-3 text-xs text-slate-400">
+                    <span class="bg-slate-800 px-3 py-1 rounded-full border border-slate-700">✓ Personalizar Abordagens</span>
+                    <span class="bg-slate-800 px-3 py-1 rounded-full border border-slate-700">✓ Evitar Erros Críticos</span>
+                    <span class="bg-slate-800 px-3 py-1 rounded-full border border-slate-700">✓ Mapear Oportunidades Invisíveis</span>
+                </div>
+            </div>
+
+            <div class="bg-cyan-50 border-l-4 border-cyan-500 p-6 rounded-r-2xl">
+                <h4 class="font-bold text-cyan-950 text-sm uppercase tracking-wider">A Regra de Ouro Inegociável</h4>
+                <p class="text-cyan-900 text-base italic mt-2 font-medium">
+                    "O objetivo no pré-call não é descobrir como vender. É mapear como aquela liderança específica gostaria de ser reconhecida no mercado. Quando você domina isso, a abordagem deixa de parecer uma prospecção fria e passa a ser uma conversa desenhada sob medida."
+                </p>
+            </div>
+        </section>
+
+        <section id="tab-checklist" class="tab-content hidden space-y-8">
+            <div class="border-b border-slate-200 pb-4">
+                <h2 class="text-3xl font-bold text-slate-900">Mapeamento Investigativo em 11 Etapas</h2>
+                <p class="text-slate-500 mt-1">Um roteiro estratégico dividido em fases lógicas para estruturar sua próxima abordagem de elite.</p>
+            </div>
+
+            <div class="space-y-4">
+                <div class="flex items-center gap-2 border-b border-slate-200 pb-2">
+                    <span class="bg-slate-900 text-white font-mono text-xs font-bold px-2.5 py-1 rounded">FASE 1</span>
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-slate-500">Mapeamento Estrutural & Liderança</h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-white p-5 rounded-xl border-l-4 border-l-cyan-500 border-y border-r border-slate-200 shadow-sm hover:shadow-md transition">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-mono font-bold text-cyan-600 bg-cyan-50 px-2 py-0.5 rounded">PASSO 01</span>
+                        </div>
+                        <h4 class="font-bold text-slate-900 mt-2 text-base">Validar Informações Básicas</h4>
+                        <p class="text-slate-600 text-xs mt-2 leading-relaxed">
+                            Confira minuciosamente dados como <strong>nome oficial da escola</strong>, nome fantasia/regional, endereço exato, cidade, telefone, site e redes sociais. Evite o constrangimento de usar dados desatualizados ou apenas a razão social fria extraída do CRM.
+                        </p>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl border-l-4 border-l-cyan-500 border-y border-r border-slate-200 shadow-sm hover:shadow-md transition">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-mono font-bold text-cyan-600 bg-cyan-50 px-2 py-0.5 rounded">PASSO 02</span>
+                        </div>
+                        <h4 class="font-bold text-slate-900 mt-2 text-base">Mapear a Cadeia de Decisão</h4>
+                        <p class="text-slate-600 text-xs mt-2 leading-relaxed">
+                            Nem sempre quem aparece primeiro é quem bate o martelo. Identifique e isole o organograma: <strong>Mantenedor, Diretor Geral, Diretor Pedagógico, Coordenadores, Gestor Financeiro, Sucessores</strong> e influenciadores informais. Saiba antes do call: <i>Quem decide? Quem influencia? Quem executa?</i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <div class="flex items-center gap-2 border-b border-slate-200 pb-2">
+                    <span class="bg-slate-900 text-white font-mono text-xs font-bold px-2.5 py-1 rounded">FASE 2</span>
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-slate-500">Varredura Completa no CRM</h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-white p-5 rounded-xl border-l-4 border-l-indigo-500 border-y border-r border-slate-200 shadow-sm hover:shadow-md transition">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-mono font-bold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded">PASSO 03</span>
+                        </div>
+                        <h4 class="font-bold text-slate-900 mt-2 text-base">Revisar Oportunidades Anteriores</h4>
+                        <p class="text-slate-600 text-xs mt-2 leading-relaxed">
+                            Histórico é munição de ouro. Abra todas as oportunidades passadas registradas daquela escola e analise: <strong>quando foi abordada, por quem, quais marcas do portfólio já fizeram contato</strong>, soluções apresentadas, se houve proposta e os motivos exatos de perda ou objeções recorrentes.
+                        </p>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl border-l-4 border-l-indigo-500 border-y border-r border-slate-200 shadow-sm hover:shadow-md transition">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-mono font-bold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded">PASSO 04</span>
+                        </div>
+                        <h4 class="font-bold text-slate-900 mt-2 text-base">Garimpar Atividades Registradas</h4>
+                        <p class="text-slate-600 text-xs mt-2 leading-relaxed">
+                            Informações estratégicas valiosas costumam ficar ocultas nas anotações de tarefas. Busque por <strong>novos números de celular, e-mails diretos</strong>, interesses antigos e notas sobre o perfil comportamental da liderança. Muitas vezes há mais valor aqui do que nos dados cadastrais básicos.
+                        </p>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl border-l-4 border-l-indigo-500 border-y border-r border-slate-200 shadow-sm hover:shadow-md transition">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-mono font-bold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded">PASSO 05</span>
+                        </div>
+                        <h4 class="font-bold text-slate-900 mt-2 text-base">Revisar Relatórios de Visita</h4>
+                        <p class="text-slate-600 text-xs mt-2 leading-relaxed">
+                            Se existirem visitas concluídas, estude o comportamento prático documentado: como o <strong>Consultor Executivo (CE) foi recebido</strong>, quais temas específicos geraram brilho nos olhos da coordenação, quais tópicos geraram forte atrito/resistência e quais dores centrais foram declaradas abertamente.
+                        </p>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl border-l-4 border-l-indigo-500 border-y border-r border-slate-200 shadow-sm hover:shadow-md transition">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-mono font-bold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded">PASSO 06</span>
+                        </div>
+                        <h4 class="font-bold text-slate-900 mt-2 text-base">Buscar Formulários de Primeira Visita</h4>
+                        <p class="text-slate-600 text-xs mt-2 leading-relaxed">
+                            Como o preenchimento do formulário de primeira visita é <strong>obrigatório por fluxo interno</strong>, ele é uma fonte garantida de informações que ajudam no desenho da narrativa comercial — especialmente útil quando o CE não detalhou o histórico no corpo da atividade regular de visita.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <div class="flex items-center gap-2 border-b border-slate-200 pb-2">
+                    <span class="bg-slate-900 text-white font-mono text-xs font-bold px-2.5 py-1 rounded">FASE 3</span>
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-slate-500">Mapeamento de Mercado & Diagnóstico Externo</h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="bg-white p-5 rounded-xl border-l-4 border-l-purple-500 border-y border-r border-slate-200 shadow-sm hover:shadow-md transition">
+                        <div>
+                            <span class="text-xs font-mono font-bold text-purple-600 bg-purple-50 px-2 py-0.5 rounded">PASSO 07</span>
+                        </div>
+                        <h4 class="font-bold text-slate-900 mt-2 text-base">Analisar Histórico de Alunado</h4>
+                        <p class="text-slate-600 text-xs mt-2 leading-relaxed">
+                            Monitore a curva de crescimento da instituição. Identifique se a escola apresenta <strong>crescimento consolidado, perda crônica de matrículas</strong>, expansão agressiva de novos segmentos ou mudanças físicas de sede. A movimentação volumétrica entrega a real saúde de mercado da gestão.
+                        </p>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl border-l-4 border-l-purple-500 border-y border-r border-slate-200 shadow-sm hover:shadow-md transition">
+                        <div>
+                            <span class="text-xs font-mono font-bold text-purple-600 bg-purple-50 px-2 py-0.5 rounded">PASSO 08</span>
+                        </div>
+                        <h4 class="font-bold text-slate-900 mt-2 text-base">Analisar Indicadores Acadêmicos</h4>
+                        <p class="text-slate-600 text-xs mt-2 leading-relaxed">
+                            Quando as bases estiverem disponíveis, extraia dados frios de desempenho: verifique as notas e históricos do <strong>ENEM, volumetria de aprovações em universidades públicas</strong>, posicionamento mercadológico em rankings locais e desempenho regional unificado.
+                        </p>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl border-l-4 border-l-purple-500 border-y border-r border-slate-200 shadow-sm hover:shadow-md transition">
+                        <div>
+                            <span class="text-xs font-mono font-bold text-purple-600 bg-purple-50 px-2 py-0.5 rounded">PASSO 09</span>
+                        </div>
+                        <h4 class="font-bold text-slate-900 mt-2 text-base">Investigar Presença Digital</h4>
+                        <p class="text-slate-600 text-xs mt-2 leading-relaxed">
+                            Varra o Instagram, Facebook, LinkedIn e site da escola. Encontre ganchos de personalização insubstituíveis: <strong>projetos ativos, eventos locais, causas defendidas, valores institucionais</strong> e, em cenários críticos, se a marca está envolvida em crises ou escândalos públicos na região.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <div class="flex items-center gap-2 border-b border-slate-200 pb-2">
+                    <span class="bg-slate-900 text-white font-mono text-xs font-bold px-2.5 py-1 rounded">FASE 4</span>
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-slate-500">Desenho de Script & Gancho Estratégico</h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-white p-5 rounded-xl border-l-4 border-l-emerald-500 border-y border-r border-slate-200 shadow-sm hover:shadow-md transition">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-mono font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">PASSO 10</span>
+                        </div>
+                        <h4 class="font-bold text-slate-900 mt-2 text-base">Decifrar o Momento Comercial</h4>
+                        <p class="text-slate-600 text-xs mt-2 leading-relaxed">
+                            O momento atual muda as prioridades do decisor. Classifique o cenário da escola: ela está em transição de direção familiar? Investindo pesado em resultados acadêmicos? Enfrentando uma concorrência predatória local? <strong>Alinhe sua solução à dor do momento da liderança.</strong>
+                        </p>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl border-l-4 border-l-emerald-500 border-y border-r border-slate-200 shadow-sm hover:shadow-md transition">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-mono font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">PASSO 11</span>
+                        </div>
+                        <h4 class="font-bold text-slate-900 mt-2 text-base">Definir o Ângulo de Abordagem</h4>
+                        <p class="text-slate-600 text-xs mt-2 leading-relaxed">
+                            Escolha um pilar de conexão central para ancorar a sua mensagem de prospecção: <strong>Legado, Tradição, Crescimento, Inovação, Aprovação, Inclusão, Gestão Operacional ou Impacto Social</strong>. Lembre-se: o roteiro definitivo e as agendas nascem desse ângulo de valor, nunca do produto puro.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tab-validacao" class="tab-content hidden space-y-8">
+            <div class="border-b border-slate-200 pb-4">
+                <h2 class="text-3xl font-bold text-slate-900">Ferramentas de Pesquisa, Diagnóstico e Rastreamento</h2>
+                <p class="text-slate-500 mt-1">Links e aplicações de uso diário para validar contatos e dados acadêmicos.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <span class="bg-blue-100 text-blue-800 text-[10px] uppercase font-bold px-2 py-0.5 rounded">Dados de Alunado & ENEM</span>
+                        <h3 class="text-lg font-bold text-slate-900 mt-2">Arco SDR Insight</h3>
+                        <p class="text-slate-600 text-xs mt-2 leading-relaxed">A aplicação central utilizada para mapeamento demográfico escolar, volumetria de alunos cadastrados e extração de dados reais de proficiência do ENEM por escola.</p>
+                    </div>
+                    <a href="https://arco-sdr-insight.lovable.app/#" target="_blank" rel="noopener noreferrer" class="mt-5 w-full bg-slate-900 text-white text-center text-xs font-bold py-2.5 rounded-lg hover:bg-slate-800 transition block">
+                        Acessar Plataforma Arco ↗
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <span class="bg-emerald-100 text-emerald-800 text-[10px] uppercase font-bold px-2 py-0.5 rounded">Rastreamento de E-mails</span>
+                        <h3 class="text-lg font-bold text-slate-900 mt-2">Mailtrack Extension</h3>
+                        <p class="text-slate-600 text-xs mt-2 leading-relaxed">Ferramenta essencial de monitoramento comercial. Permite visualizar com precisão em tempo real quem abriu seu e-mail, quantas vezes a mensagem foi aberta, se o lead está com a tela ativa naquele momento ou se a mensagem foi encaminhada.</p>
+                    </div>
+                    <a href="https://chromewebstore.google.com/detail/email-tracker-by-mailtrac/ndnaehgpjlnokgebbaldlmgkapkpjkkb?hl=pt-BR" target="_blank" rel="noopener noreferrer" class="mt-5 w-full bg-slate-900 text-white text-center text-xs font-bold py-2.5 rounded-lg hover:bg-slate-800 transition block">
+                        Instalar Extensão Chrome ↗
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <span class="bg-amber-100 text-amber-800 text-[10px] uppercase font-bold px-2 py-0.5 rounded">Engenharia Social / Identificação</span>
+                        <h3 class="text-lg font-bold text-slate-900 mt-2">Dono do Zap</h3>
+                        <p class="text-slate-600 text-xs mt-2 leading-relaxed">Conseguiu um número de WhatsApp celular no mapeamento mas não tem certeza da identidade do contato? Quando o truque tradicional de consultar a chave Pix no banco falhar, utilize esta ferramenta para cruzar dados e identificar o proprietário da linha.</p>
+                    </div>
+                    <a href="http://donodozap.com/" target="_blank" rel="noopener noreferrer" class="mt-5 w-full bg-slate-900 text-white text-center text-xs font-bold py-2.5 rounded-lg hover:bg-slate-800 transition block">
+                        Consultar Número ↗
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <span class="bg-purple-100 text-purple-800 text-[10px] uppercase font-bold px-2 py-0.5 rounded">Criação de Pitch com IA</span>
+                        <h3 class="text-lg font-bold text-slate-900 mt-2">Assistente Customizado Gemini</h3>
+                        <p class="text-slate-600 text-xs mt-2 leading-relaxed">Inteligência artificial personalizada desenhada especificamente para auxiliar SDRs na estruturação rápida, quebra de objeções e redação automatizada de pitches de alto impacto comercial.</p>
+                    </div>
+                    <a href="https://gemini.google.com/gem/1PfvywYYCslAucxt5ixI-Ty3eVeG8SkWn?usp=sharing" target="_blank" rel="noopener noreferrer" class="mt-5 w-full bg-purple-600 text-white text-center text-xs font-bold py-2.5 rounded-lg hover:bg-purple-700 transition block">
+                        Abrir Gemini customizado ↗
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between md:col-span-2">
+                    <div>
+                        <span class="bg-indigo-100 text-indigo-800 text-[10px] uppercase font-bold px-2 py-0.5 rounded">Data Mining & Email Verification</span>
+                        <h3 class="text-lg font-bold text-slate-900 mt-2">Snov.io</h3>
+                        <p class="text-slate-600 text-xs mt-2 leading-relaxed">O Snov.io é uma plataforma completa para encontrar e validar e-mails de decisores, enriquecendo dados com rapidez e alta precisão. Além disso, permite criar fluxos de cold e-mail inteligentes, com etapas automatizadas que ajudam o SDR a acelerar contatos, aumentar a taxa de resposta e manter uma cadência constante e estratégica.</p>
+                    </div>
+                    <a href="https://snov.io/" target="_blank" rel="noopener noreferrer" class="mt-5 w-full bg-slate-900 text-white text-center text-xs font-bold py-2.5 rounded-lg hover:bg-slate-800 transition block">
+                        Acessar Snov.io ↗
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="tab-linkedin" class="tab-content hidden space-y-8">
+            <div class="border-b border-slate-200 pb-4">
+                <span class="bg-cyan-100 text-cyan-800 text-xs font-semibold px-2.5 py-1 rounded">Data Mining & Scripts</span>
+                <h2 class="text-3xl font-bold text-slate-900 mt-2">Extratores de Contatos e Cardápio de Abordagem</h2>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold text-slate-800 mb-4">Ferramentas de Extração B2B (LinkedIn)</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    
+                    <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm relative">
+                        <div class="flex justify-between items-start">
+                            <h4 class="text-lg font-bold text-slate-900">LUSHA Extension</h4>
+                            <span class="bg-rose-100 text-rose-800 text-[9px] font-bold px-2 py-0.5 rounded uppercase">E-mail Corporativo</span>
+                        </div>
+                        <p class="text-slate-600 text-xs mt-2 leading-relaxed">Excelente para encontrar números diretos de telefones celulares e e-mails corporativos válidos de diretores direto no perfil do LinkedIn. Possui uma quantidade de créditos limitadas que recarrega +/- mensalmente (às vezes demora), use somente quando não tiver mais opção de achar o contato do decisor.</p>
+                        <div class="mt-3 text-[11px] text-slate-500 bg-slate-50 p-2.5 rounded border border-slate-100">
+                            🚨 <strong>Regra de Cadastro:</strong> Obrigatoriamente exige a criação de conta utilizando um <strong>e-mail corporativo</strong> válido.
+                        </div>
+                        <a href="https://chromewebstore.google.com/detail/lusha-easily-find-b2b-con/mcebeofpilippmndlpcghpmghcljajna?hl=pt-BR" target="_blank" rel="noopener noreferrer" class="mt-4 w-full bg-slate-100 hover:bg-slate-200 text-slate-800 text-center text-xs font-semibold py-2 rounded-lg transition block">
+                            Baixar Lusha na Web Store ↗
+                        </a>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm relative">
+                        <div class="flex justify-between items-start">
+                            <h4 class="text-lg font-bold text-slate-900">APOLLO.IO Extension</h4>
+                            <span class="bg-amber-100 text-amber-800 text-[9px] font-bold px-2 py-0.5 rounded uppercase">E-mail Pessoal</span>
+                        </div>
+                        <p class="text-slate-600 text-xs mt-2 leading-relaxed">Banco de dados robusto integrado ao LinkedIn para descobrir e-mails e contatos diretos de decisores e mantenedores de redes de ensino.</p>
+                        <div class="mt-3 text-[11px] text-slate-500 bg-slate-50 p-2.5 rounded border border-slate-100">
+                            ⚠️ <strong>Regra de Cadastro:</strong> Para contas em formato gratuito/trial, o sistema só permite a criação utilizando um <strong>e-mail pessoal. Acabou os créditos gratuitos? Precisa criar uma nova conta.</strong>
+                        </div>
+                        <a href="https://chromewebstore.google.com/detail/apolloio-free-b2b-phone-n/alhgpfoeiimagjlnfekdhkjlkiomcapa?hl=pt-BR" target="_blank" rel="noopener noreferrer" class="mt-4 w-full bg-slate-100 hover:bg-slate-200 text-slate-800 text-center text-xs font-semibold py-2 rounded-lg transition block">
+                            Baixar Apollo na Web Store ↗
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="bg-slate-900 text-white p-6 rounded-2xl shadow-md border border-slate-800">
+                <h3 class="text-lg font-bold text-cyan-400 mb-2">🥗 Cardápio de Abordagens Colaborativo (Padlet)</h3>
+                <p class="text-slate-300 text-xs leading-relaxed max-w-3xl">
+                    Repositório de inteligência com modelos de scripts de sucesso, mensagens validadas e ganchos estruturados pela equipe para diferentes perfis de colégios. Aproveitem para contribuir com cases/pitchs que utilizam em suas marcas.
+                </p>
+                <div class="mt-3 text-xs bg-slate-800 text-slate-300 p-3 rounded-lg inline-block border border-slate-700">
+                    💡 <strong>Dica Operacional:</strong> Use a ferramenta de <strong>lupa</strong> localizada no canto superior direito da tela do Padlet para buscar abordagens filtrando por palavras-chave específicas (Ex: "Inclusão", "ENEM").
+                </div>
+                <div class="mt-5">
+                    <a href="https://padlet.com/fernandaftsilva99/cardapio-de-abordagens-upfapbwdbf4y5tpw" target="_blank" rel="noopener noreferrer" class="bg-cyan-600 text-white text-xs font-bold px-5 py-2.5 rounded-lg hover:bg-cyan-700 transition inline-block">
+                        Abrir Cardápio de Abordagens ↗
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="tab-crescibots" class="tab-content hidden space-y-6">
+            <div class="border-b border-slate-200 pb-4">
+                <span class="bg-emerald-100 text-emerald-800 text-xs font-semibold px-2.5 py-1 rounded">NotebookLM Hub</span>
+                <h2 class="text-3xl font-bold text-slate-900 mt-2">Bases de Conhecimento do Nosso Portfólio (Crescibots)</h2>
+                <p class="text-slate-500 text-sm mt-1">Nossos repositórios oficiais e especializados. Criados para fornecer domínio conceito completo, propostas pedagógicas e mapeamento de diferenciais de cada uma das nossas marcas.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between hover:border-emerald-500 transition">
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-base">Crescibot SAS</h4>
+                        <p class="text-slate-500 text-xs mt-1">Inteligência de ponta sobre nossa marca focada em alta performance acadêmica, materiais estruturados e estratégias avançadas de aprovação nos vestibulares mais concorridos.</p>
+                    </div>
+                    <a href="https://notebooklm.google.com/notebook/55ae078a-4085-4a5c-8dfc-82f10aa09546" target="_blank" rel="noopener noreferrer" class="mt-4 text-xs font-semibold text-emerald-600 hover:text-emerald-700 flex items-center gap-1">
+                        Disparar Bot SAS ↗
+                    </a>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between hover:border-emerald-500 transition">
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-base">Crescibot COC</h4>
+                        <p class="text-slate-500 text-xs mt-1">Domínio completo sobre a nossa metodologia interativa, ferramentas de aprendizagem dinâmica, e pilares de engajamento do Sistema COC.</p>
+                    </div>
+                    <a href="https://notebooklm.google.com/notebook/5c314533-1b04-48e7-9c7a-c1d6bad6ae8e" target="_blank" rel="noopener noreferrer" class="mt-4 text-xs font-semibold text-emerald-600 hover:text-emerald-700 flex items-center gap-1">
+                        Disparar Bot COC ↗
+                    </a>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between hover:border-emerald-500 transition">
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-base">Crescibot Positivo</h4>
+                        <p class="text-slate-500 text-xs mt-1">Guia profundo sobre o ecossistema Positivo. Mapeamento de nosso catálogo, soluções suplementares integradas e abordagens de autoridade no mercado escolar.</p>
+                    </div>
+                    <a href="https://notebooklm.google.com/notebook/64bbda0b-5227-4150-8aea-aba59079c913" target="_blank" rel="noopener noreferrer" class="mt-4 text-xs font-semibold text-emerald-600 hover:text-emerald-700 flex items-center gap-1">
+                        Disparar Bot Positivo ↗
+                    </a>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between hover:border-emerald-500 transition">
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-base">Crescibot Geekie</h4>
+                        <p class="text-slate-500 text-xs mt-1">Foco na nossa solução digital pioneira e inovadora. Inteligência sobre personalização profunda de planos de estudo e tecnologia de dados de ponta da Geekie.</p>
+                    </div>
+                    <a href="https://notebooklm.google.com/notebook/445093e4-a96f-4420-b69f-f949a1eb91e8" target="_blank" rel="noopener noreferrer" class="mt-4 text-xs font-semibold text-emerald-600 hover:text-emerald-700 flex items-center gap-1">
+                        Disparar Bot Geekie ↗
+                    </a>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between hover:border-emerald-500 transition">
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-base">Crescibot SAE</h4>
+                        <p class="text-slate-500 text-xs mt-1">Mapeamento estrutural do SAE Digital. Alinhamento conceitual sobre os pilares de relevância do material, assessoria pedagógica efetiva e facilidades de implantação.</p>
+                    </div>
+                    <a href="https://notebooklm.google.com/notebook/221d5700-fed0-4722-a441-8e2418fb406f" target="_blank" rel="noopener noreferrer" class="mt-4 text-xs font-semibold text-emerald-600 hover:text-emerald-700 flex items-center gap-1">
+                        Disparar Bot SAE ↗
+                    </a>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between hover:border-emerald-500 transition">
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-base">Crescibot Conquista</h4>
+                        <p class="text-slate-500 text-xs mt-1">Imersão completa na proposta de valor da Conquista Solução Educacional. Detalhes sobre educação financeira, empreendedorismo prático e desenvolvimento integral de valores.</p>
+                    </div>
+                    <a href="https://notebooklm.google.com/notebook/9a2873fd-9e4a-4071-a671-671e3c5d78e6" target="_blank" rel="noopener noreferrer" class="mt-4 text-xs font-semibold text-emerald-600 hover:text-emerald-700 flex items-center gap-1">
+                        Disparar Bot Conquista ↗
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        function switchTab(tabId) {
+            // Oculta todas as telas
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.add('hidden'));
+
+            // Reseta estilo dos botões da barra lateral
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-cyan-600', 'text-white');
+                btn.classList.add('text-slate-400', 'hover:bg-slate-900', 'hover:text-white');
+            });
+
+            // Ativa a tela solicitada
+            document.getElementById('tab-' + tabId).classList.remove('hidden');
+
+            // Ativa o botão correspondente
+            const activeBtn = document.getElementById('btn-' + tabId);
+            activeBtn.classList.remove('text-slate-400', 'hover:bg-slate-900', 'hover:text-white');
+            activeBtn.classList.add('bg-cyan-600', 'text-white');
+        }
+    </script>
+</body>
+</html>
