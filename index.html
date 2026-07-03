@@ -27,6 +27,9 @@
             <button onclick="switchTab('validacao')" id="btn-validacao" class="tab-btn w-full flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition text-slate-400 hover:bg-slate-900 hover:text-white">
                 🔍 Pesquisa & Validação
             </button>
+            <button onclick="switchTab('google-trends')" id="btn-trends" class="tab-btn w-full flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition text-slate-400 hover:bg-slate-900 hover:text-white">
+                📈 Google Trends & Snov.io
+            </button>
             <button onclick="switchTab('linkedin')" id="btn-linkedin" class="tab-btn w-full flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition text-slate-400 hover:bg-slate-900 hover:text-white">
                 🧬 LinkedIn & Abordagem
             </button>
@@ -273,6 +276,147 @@
             </div>
         </section>
 
+        <section id="tab-google-trends" class="tab-content hidden space-y-8">
+            <div class="border-b border-slate-200 pb-4">
+                <span class="bg-cyan-100 text-cyan-800 text-xs font-semibold px-2.5 py-1 rounded">Inteligência de Mercado & Comandos Avançados</span>
+                <h2 class="text-3xl font-bold text-slate-900 mt-2">Google Trends & Google Dorks</h2>
+                <p class="text-slate-500 mt-1">Estratégias avançadas de mineração de dados e identificação de temas quentes no mercado educacional.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm space-y-4">
+                <div class="flex items-center gap-2">
+                    <span class="text-2xl">📈</span>
+                    <h3 class="text-xl font-bold text-slate-900">Google Trends</h3>
+                </div>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Ferramenta gratuita do Google que mapeia o volume de interesse e os temas mais pesquisados do momento, permitindo a segmentação por região geográfica, período temporal e comparação direta de termos correlacionados. 
+                </p>
+                <div class="bg-cyan-50 border-l-4 border-cyan-500 p-4 text-xs text-cyan-900 rounded-r-xl">
+                    <strong>💡 Caso real de uso: Essa estratégia já foi aplicada por nossa equipe. Ao analisar o Google Trends, identificamos um aumento expressivo nas buscas por "educação inclusiva", impulsionado pelo Decreto nº 12.686/2025. O levantamento mostrou maior interesse em estados como Paraíba, Maranhão, Bahia, Amazonas e Santa Catarina, permitindo criar um gancho altamente contextualizado para as ligações. Em vez de uma abordagem genérica, iniciamos a conversa com um tema que já estava em evidência na região, tornando a prospecção muito mais relevante.
+                </div>
+                <a href="https://trends.google.com.br/trends/explore?date=now%201-d&geo=BR&q=educa%C3%A7%C3%A3o%20inclusiva&hl=pt-BR" target="_blank" rel="noopener noreferrer" class="inline-block bg-cyan-600 hover:bg-cyan-700 text-white font-semibold text-xs px-4 py-2.5 rounded-lg transition shadow-sm">
+                    Explorar Tendências Educação Inclusiva ↗
+                </a>
+            </div>
+
+            <hr class="border-slate-200">
+
+            <div class="space-y-6">
+                <div class="flex items-center gap-2">
+                    <span class="text-2xl">🕵️‍♂️</span>
+                    <h3 class="text-xl font-bold text-slate-900">Google Dorks (Técnicas de Mineração Oculta)</h3>
+                </div>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Comandos e operadores de busca avançados que instruem o motor do Google a varrer servidores escolares e expor documentos, planilhas e arquivos sensíveis indexados que não estão visíveis no menu de navegação do site oficial da instituição.
+                </p>
+
+                <div class="bg-slate-900 text-slate-100 p-5 rounded-xl border border-slate-800 space-y-3">
+                    <h4 class="text-cyan-400 font-bold text-sm">🛠️ Guia Prático de Execução</h4>
+                    <ol class="list-decimal pl-5 space-y-2 text-xs text-slate-300">
+                        <li>Acesse o motor do <span class="text-white font-mono">google.com.br</span>.</li>
+                        <li>Utilize <strong>um único comando</strong> por vez para evitar bloqueios ou falsos positivos.</li>
+                        <li><strong>Dica de Sintaxe:</strong> Nunca insira o prefixo "www" no operador de domínio. Execute sempre no formato limpo: <code class="bg-slate-800 px-1 py-0.5 rounded text-cyan-300 font-mono">site:nomedaescola.com.br</code>.</li>
+                    </ol>
+                    <div class="bg-slate-800 p-3 rounded-lg border border-slate-700 text-xs">
+                        <span class="text-slate-400 block font-bold uppercase text-[10px] tracking-wider">Exemplo de String Unificada:</span>
+                        <code class="text-white font-mono block mt-1 break-all">site:saoluis.org filetype:pdf "material didático" site:saoluis.org "valor" "matrícula"</code>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm border-b border-slate-100 pb-1">📚 Materiais Didáticos & Sistemas</h4>
+                            <p class="text-slate-500 text-[11px] mt-1">Identifica manuais, listagens de livros e marcas parceiras adotadas atualmente.</p>
+                            <div class="mt-3 space-y-2">
+                                <div class="bg-slate-50 p-2 rounded border border-slate-100 flex items-center justify-between text-xs font-mono">
+                                    <span id="dork-mat1" class="text-slate-700 truncate mr-2">site:escola.com.br filetype:pdf "material didático"</span>
+                                    <button onclick="copyDork('dork-mat1')" class="bg-slate-200 hover:bg-slate-300 text-slate-700 px-2 py-0.5 rounded text-[10px] uppercase font-bold shrink-0">Copiar</button>
+                                </div>
+                                <div class="bg-slate-50 p-2 rounded border border-slate-100 flex items-center justify-between text-xs font-mono">
+                                    <span id="dork-mat2" class="text-slate-700 truncate mr-2">site:escola.com.br "catálogo" "sistema de ensino"</span>
+                                    <button onclick="copyDork('dork-mat2')" class="bg-slate-200 hover:bg-slate-300 text-slate-700 px-2 py-0.5 rounded text-[10px] uppercase font-bold shrink-0">Copiar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm border-b border-slate-100 pb-1">💰 Valores, Mensalidades & Preços</h4>
+                            <p class="text-slate-500 text-[11px] mt-1">Localiza tabelas de preços ocultas, circulares financeiras e taxas de matrícula.</p>
+                            <div class="mt-3 space-y-2">
+                                <div class="bg-slate-50 p-2 rounded border border-slate-100 flex items-center justify-between text-xs font-mono">
+                                    <span id="dork-val1" class="text-slate-700 truncate mr-2">site:escola.com.br "valor" "mensalidade"</span>
+                                    <button onclick="copyDork('dork-val1')" class="bg-slate-200 hover:bg-slate-300 text-slate-700 px-2 py-0.5 rounded text-[10px] uppercase font-bold shrink-0">Copiar</button>
+                                </div>
+                                <div class="bg-slate-50 p-2 rounded border border-slate-100 flex items-center justify-between text-xs font-mono">
+                                    <span id="dork-val2" class="text-slate-700 truncate mr-2">site:escola.com.br filetype:pdf "tabela de preços"</span>
+                                    <button onclick="copyDork('dork-val2')" class="bg-slate-200 hover:bg-slate-300 text-slate-700 px-2 py-0.5 rounded text-[10px] uppercase font-bold shrink-0">Copiar</button>
+                                </div>
+                                <div class="bg-slate-50 p-2 rounded border border-slate-100 flex items-center justify-between text-xs font-mono">
+                                    <span id="dork-val3" class="text-slate-700 truncate mr-2">site:escola.com.br "investimento" "matrícula"</span>
+                                    <button onclick="copyDork('dork-val3')" class="bg-slate-200 hover:bg-slate-300 text-slate-700 px-2 py-0.5 rounded text-[10px] uppercase font-bold shrink-0">Copiar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm border-b border-slate-100 pb-1">📄 Contratos, Regulamentos & Vigência</h4>
+                            <p class="text-slate-500 text-[11px] mt-1">Mapeia minutas de contratos de prestação de serviços e cláusulas de permanência.</p>
+                            <div class="mt-3 space-y-2">
+                                <div class="bg-slate-50 p-2 rounded border border-slate-100 flex items-center justify-between text-xs font-mono">
+                                    <span id="dork-con1" class="text-slate-700 truncate mr-2">site:escola.com.br "contrato" "vigência"</span>
+                                    <button onclick="copyDork('dork-con1')" class="bg-slate-200 hover:bg-slate-300 text-slate-700 px-2 py-0.5 rounded text-[10px] uppercase font-bold shrink-0">Copiar</button>
+                                </div>
+                                <div class="bg-slate-50 p-2 rounded border border-slate-100 flex items-center justify-between text-xs font-mono">
+                                    <span id="dork-con2" class="text-slate-700 truncate mr-2">site:escola.com.br "regulamento" "condições"</span>
+                                    <button onclick="copyDork('dork-con2')" class="bg-slate-200 hover:bg-slate-300 text-slate-700 px-2 py-0.5 rounded text-[10px] uppercase font-bold shrink-0">Copiar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm border-b border-slate-100 pb-1">📊 Apresentações Comerciais & Propostas</h4>
+                            <p class="text-slate-500 text-[11px] mt-1">Busca arquivos em formato PowerPoint utilizados em reuniões institucionais.</p>
+                            <div class="mt-3 space-y-2">
+                                <div class="bg-slate-50 p-2 rounded border border-slate-100 flex items-center justify-between text-xs font-mono">
+                                    <span id="dork-ppt1" class="text-slate-700 truncate mr-2">site:escola.com.br filetype:ppt "apresentação"</span>
+                                    <button onclick="copyDork('dork-ppt1')" class="bg-slate-200 hover:bg-slate-300 text-slate-700 px-2 py-0.5 rounded text-[10px] uppercase font-bold shrink-0">Copiar</button>
+                                </div>
+                                <div class="bg-slate-50 p-2 rounded border border-slate-100 flex items-center justify-between text-xs font-mono">
+                                    <span id="dork-ppt2" class="text-slate-700 truncate mr-2">site:escola.com.br filetype:pptx "proposta"</span>
+                                    <button onclick="copyDork('dork-ppt2')" class="bg-slate-200 hover:bg-slate-300 text-slate-700 px-2 py-0.5 rounded text-[10px] uppercase font-bold shrink-0">Copiar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                    <div class="bg-slate-100 p-4 rounded-xl border border-slate-200">
+                        <span class="font-bold text-slate-800 block uppercase tracking-wider mb-2">💡 Quando Aplicar a Técnica</span>
+                        <ul class="list-disc pl-4 space-y-1 text-slate-600">
+                            <li><strong>Antes do primeiro contato:</strong> Inicie a prospecção dominando a régua exata de valores e preços cobrados pela instituição.</li>
+                            <li><strong>Contorno de barreiras:</strong> Se a secretaria ou recepção se recusar a informar o material adotado, localize os editais ou manuais indexados você mesmo via comandos.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-100 p-4 rounded-xl border border-slate-200">
+                        <span class="font-bold text-slate-800 block uppercase tracking-wider mb-2">🎯 Resultados Inteligentes Esperados</span>
+                        <ul class="list-disc pl-4 space-y-1 text-slate-600">
+                            <li>Localizar tabelas de preços e anuidades que foram guardadas em diretórios "escondidos".</li>
+                            <li>Descobrir o fornecedor de apostilas ou o sistema de ensino concorrente utilizado no ano vigente.</li>
+                            <li>Mapear os ciclos de reajuste econômico e vigência de contratos pedagógicos.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="tab-linkedin" class="tab-content hidden space-y-8">
             <div class="border-b border-slate-200 pb-4">
                 <span class="bg-cyan-100 text-cyan-800 text-xs font-semibold px-2.5 py-1 rounded">Data Mining & Scripts</span>
@@ -417,6 +561,15 @@
             const activeBtn = document.getElementById('btn-' + tabId);
             activeBtn.classList.remove('text-slate-400', 'hover:bg-slate-900', 'hover:text-white');
             activeBtn.classList.add('bg-cyan-600', 'text-white');
+        }
+
+        function copyDork(elementId) {
+            const commandText = document.getElementById(elementId).innerText;
+            navigator.clipboard.writeText(commandText).then(() => {
+                alert('String do Google Dork copiada! Substitua "escola.com.br" pelo domínio do seu lead.');
+            }).catch(err => {
+                console.error('Erro ao copiar comando dork: ', err);
+            });
         }
     </script>
 </body>
